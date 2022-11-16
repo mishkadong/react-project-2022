@@ -1,0 +1,218 @@
+.main {
+  &__ad {
+    background-color: #ED83A8;
+    padding: 18px 0;
+    margin-bottom: 10px;
+    &-block {
+      display: grid;
+      grid-auto-flow: column;
+      justify-content: center;
+      gap: 30px;
+    }
+    &-text,
+    &-link {
+      font-size: 18px;
+      line-height: 24px;
+      text-align: center;
+      color: #FFF;
+    }
+  }
+  &__hero {
+    min-height: 700px;
+    background-image: url(../images/pics/main_hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__cards {
+    min-height: inherit;
+    align-items: flex-end;
+    //
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+    &-item {
+      width: calc(100% / 6 - 25px);
+      object-fit: cover;
+      font-size: 0;
+    }
+    &-img {
+      width: 100%;
+    }
+    &-caption {
+      text-transform: capitalize;
+      display: inline-block;
+      width: 100%;
+      padding: 10px 0;
+      text-align: center;
+      background-color: #000;
+      color: #FFF;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+  }
+  &__content {
+    padding-top: 100px;
+    &-title {
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 36px;
+      color: #32313A;
+    }
+    &-heading {
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: space-between;
+    }
+    &-nav {
+      display: flex;
+      align-items: center;
+      img + img {
+        margin-left: 20px;
+      }
+    }
+    &-block {
+      width: 100%;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
+    &-card{
+      width: calc(25% - 22.5px);
+      margin-bottom: 100px;
+      position: relative;
+      &-round {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        background-color: #F7F7F9;
+        border-radius: 50%;
+        right: 12px;
+        top: 12px;
+        cursor: pointer;
+      }
+      &-like {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -40%);
+        // fill: none;
+        stroke: #000;
+      }
+      &-img {
+        width: 100%;
+        object-fit: cover;
+      }
+      &-caption {
+      }
+      &-brand {
+        display: block;
+        margin-top: 14px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+        color: #32313A;
+      }
+      &-text {
+        display: block;
+      }
+      &-text,
+      &-price {
+        margin-top: 8px;
+        font-size: 13px;
+        line-height: 16px;
+        color: #56555D;
+      }
+      &-lowprice {
+        font-size: 13px;
+        line-height: 16px;
+        color: #DA2E3F;
+        margin-right: 10px;
+      }
+      &-price {
+        &.line-through {
+          text-decoration: line-through;
+        }
+      }
+    }
+  }
+  &__wallpapers {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    &-img {
+      width: calc(50% - 5px);
+      & img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  &__article {
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-content,
+    &-img {
+      width: calc(50% - 15px);
+      font-size: 0;
+      height: 100%;
+    }
+    &-content {
+      padding-right: 90px;
+    }
+    &-title {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 46px;
+      color: #32313A;
+    }
+    &-text {
+      font-size: 14px;
+      line-height: 22px;
+      color: #6E6D74;
+      margin: 15px 0 30px;
+    }
+    &-link {
+      display: inline-block;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+      color: #fff;
+      padding: 10px 20px;
+      background-color: #32313A;
+    }
+    &-img img {
+      width: 100%;
+    }
+  }
+  &__fullscreen-image {
+    background-image: url(../images/pics/fullscreen_image.jpg);
+    min-height: 400px;
+    background-repeat: no-repeat;
+    background-position: 20% 5%;
+    background-size: cover;
+  }
+  &__brands {
+    padding: 110px 0 140px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 85% 15%;
+    align-items: center;
+    &-block {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &-link {
+      font-size: 18px;
+      line-height: 24px;
+      text-align: end;
+      text-decoration-line: underline;
+      color: #32313A;
+    }
+  }
+}

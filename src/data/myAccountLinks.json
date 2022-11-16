@@ -1,0 +1,21 @@
+{
+  "title": "My account",
+  "links": [
+    {
+      "linkName": "Order history",
+      "href": "/"
+    },
+    {
+      "linkName": "Payment methods",
+      "href": "/"
+    },
+    {
+      "linkName": "Account settings",
+      "href": "/"
+    },
+    {
+      "linkName": "Favorites",
+      "href": "/"
+    }
+  ]
+}

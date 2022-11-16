@@ -1,0 +1,23 @@
+
+  {
+    "title": "Customer support",
+    "links": [
+      {
+        "linkName": "Size guides",
+        "href": "/"
+      },
+      {
+        "linkName": "Shipping",
+        "href": "/"
+      },
+      {
+        "linkName": "Returns",
+        "href": "/"
+      },
+      {
+        "linkName": "Track my order",
+        "href": "/"
+      }
+    ]
+
+  }
